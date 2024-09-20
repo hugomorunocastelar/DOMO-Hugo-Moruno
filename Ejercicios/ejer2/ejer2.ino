@@ -1,7 +1,7 @@
-int pin = 13;
-
+int pin = 12;
+  
 void setup() {
-  // put your setup code here, to run once:  
+  // put your setup code here, to run once:
 }
 
 void loop() {
@@ -11,7 +11,7 @@ void loop() {
 
 bucleLed(codigo) {
   digitalWrite(codigo, HIGH);
-  delay(500);
+  delay(1000);
   digitalWrite(codigo, LOW);
-  delay(500);
+  delay(1000);
 }
