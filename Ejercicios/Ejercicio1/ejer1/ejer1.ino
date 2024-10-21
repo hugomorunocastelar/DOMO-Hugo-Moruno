@@ -1,17 +1,17 @@
 int pin = 13;
 
 void setup() {
-  (13, OUTPUT);
+  pinMode(pin, OUTPUT);  // Set pin as OUTPUT
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // Call the bucleLed function to blink the LED
   bucleLed(pin);
 }
 
-bucleLed(codigo) {
-  digitalWrite(codigo, HIGH);
-  delay(500);
-  digitalWrite(codigo, LOW);
-  delay(500);
+void bucleLed(int codigo) {
+  digitalWrite(codigo, HIGH);  // Turn the LED on
+  delay(500);                  // Wait for 500 milliseconds
+  digitalWrite(codigo, LOW);   // Turn the LED off
+  delay(500);                  // Wait for 500 milliseconds
 }
